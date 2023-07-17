@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pick Ban Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(21,23,27);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+        }
+        #teamForm {
+            /*background-color: #fff;*/
+            margin: 20px 0;
+            padding: 20px;
+            /*border-radius: 5px;*/
+            /*box-shadow: 0px 0px 10px #bbb;*/
+        }
+        #teamForm label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+            font-size: 30px;
+        }
+        #teamForm input[type="text"] {
+            width: 100%;
+            padding: 14px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        #blueTeam {
+            background-color: rgb(10,66,100);
+        }
+        #redTeam {
+            background-color: rgb(190,32,56);
+        }
+        #matchName {
+            background-color: #000;
+        }
+        #teamForm input[type="submit"] {
+            display: block;
+            width: 40%;
+            padding: 20px;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            background-color: #999;
+            font-size: 1.5em;
+            margin: 5px auto;
+        }
+        #teamForm input[type="submit"]:hover {
+            background-color: #bbb;
+        }
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pick Ban Tool</h1>
+        <form id="teamForm" method="POST" action="/">
+            <label for="blueTeam">Blue Team Name:</label>
+            <input type="text" id="blueTeam" name="blueTeam">
+            <label for="redTeam">Red Team Name:</label>
+            <input type="text" id="redTeam" name="redTeam">
+            <label for="matchName">Match Name:</label>
+            <input type="text" id="matchName" name="matchName">
+            <input type="submit" value="CONFIRM">
+        </form>
+    </div>
+</body>
+</html>

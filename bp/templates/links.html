@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pick Ban Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(21, 23, 27);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 83vh;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+        }
+
+        .link-input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .link-input input {
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            text-align: center;
+            font-size: 26px;
+            padding: 5px 10px;
+            width: 400px;
+        }
+
+        .link-input button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 17px;
+        }
+         div label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+            font-size: 30px;
+        }
+        #blueTeam {
+            background-color: rgb(10,66,100);
+        }
+        #redTeam {
+            background-color: rgb(190,32,56);
+        }
+        #matchName {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pick Ban Tool</h1>
+    <div class="link-input">
+        <label id="blueTeam">PICK & BAN LINK</label>
+        <input type="text" value="{{ blue_team_link }}" readonly>
+        <button onclick="copyToClipboard('{{ blue_team_link }}')">Copy</button>
+    </div>
+    <div class="link-input">
+        <label id="redTeam">PICK & BAN LINK</label>
+        <input type="text" value="{{ red_team_link }}" readonly>
+        <button onclick="copyToClipboard('{{ red_team_link }}')">Copy</button>
+    </div>
+    <div class="link-input">
+        <label id="matchName">SPECTATOR LINK</label>
+        <input type="text" value="{{ watch_link }}" readonly>
+        <button onclick="copyToClipboard('{{ watch_link }}')">Copy</button>
+    </div>
+
+    <script>
+        function copyToClipboard(link) {
+            const el = document.createElement('textarea');
+            el.value = link;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        }
+    </script>
+</body>
+</html>

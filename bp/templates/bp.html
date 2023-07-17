@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BP Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
+    <style>
+        body {
+            background-color: #181a1b;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .board {
+            display: flex;
+            justify-content: space-around;  /* 修改了此处 */
+            margin-bottom: 20px;
+        }
+
+        .status {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .heroes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+
+        .hero img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .hero p {
+            margin: 0;
+            padding: 0;
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .hero:active {
+            background-color: #333;
+        }
+
+        button {
+            color: #181a1b;
+            background-color: #f2a365;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        button:hover {
+            background-color: #181a1b;
+            color: #f2a365;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+   <div class="board">
+        <h1 id="teamName1"></h1>
+        <h1 id="teamName2"></h1>
+    </div>
+
+    <div class="status">
+        <div>
+            <h2 id="bpStatus1Picked"></h2>
+            <h2 id="bpStatus1Banned"></h2>
+        </div>
+        <div>
+            <h2 id="bpStatus2Picked"></h2>
+            <h2 id="bpStatus2Banned"></h2>
+        </div>
+    </div>
+
+    <div class="actions">
+        <button id="pick" onclick="bp('pick')" disabled>Pick</button>
+        <button id="ban" onclick="bp('ban')" disabled>Ban</button>
+    </div>
+
+    <div class="heroes">
+       <div class="hero" onclick="selectHero('Sara')">
+            <img src="/static/Sara.png" alt="Sara">
+            <p>Sara</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Shinobu')">
+            <img src="/static/Shinobu.png" alt="Shinobu">
+            <p>Shinobu</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Tohma')">
+            <img src="/static/Tohma.png" alt="Tohma">
+            <p>Tohma</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Shougun')">
+            <img src="/static/Shougun.png" alt="Shougun">
+            <p>Shougun</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Yelan')">
+            <img src="/static/Yelan.png" alt="Yelan">
+            <p>Yelan</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Yunjin')">
+            <img src="/static/Yunjin.png" alt="Yunjin">
+            <p>Yunjin</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Tartaglia')">
+            <img src="/static/Tartaglia.png" alt="Tartaglia">
+            <p>Tartaglia</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Tighnari')">
+            <img src="/static/Tighnari.png" alt="Tighnari">
+            <p>Tighnari</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Yae')">
+            <img src="/static/Yae.png" alt="Yae">
+            <p>Yae</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Sayu')">
+            <img src="/static/Sayu.png" alt="Sayu">
+            <p>Sayu</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Shenhe')">
+            <img src="/static/Shenhe.png" alt="Shenhe">
+            <p>Shenhe</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Xingqiu')">
+            <img src="/static/Xingqiu.png" alt="Xingqiu">
+            <p>Xingqiu</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Zhongli')">
+            <img src="/static/Zhongli.png" alt="Zhongli">
+            <p>Zhongli</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Yoimiya')">
+            <img src="/static/Yoimiya.png" alt="Yoimiya">
+            <p>Yoimiya</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Venti')">
+            <img src="/static/Venti.png" alt="Venti">
+            <p>Venti</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Wanderer')">
+            <img src="/static/Wanderer.png" alt="Wanderer">
+            <p>Wanderer</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Xinyan')">
+            <img src="/static/Xinyan.png" alt="Xinyan">
+            <p>Xinyan</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Sucrose')">
+            <img src="/static/Sucrose.png" alt="Sucrose">
+            <p>Sucrose</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Xiao')">
+            <img src="/static/Xiao.png" alt="Xiao">
+            <p>Xiao</p>
+        </div>
+
+        <div class="hero" onclick="selectHero('Xiangling')">
+            <img src="/static/Xiangling.png" alt="Xiangling">
+            <p>Xiangling</p>
+        </div>
+
+    </div>
+
+    <script>
+        var socket = io();
+        var teamName1 = "{{ blue_team }}"; /* 获取队伍1名字 */
+        var teamName2 = "{{ red_team }}"; /* 获取队伍2名字 */
+        var currentTeam = "{{ bp_team }}";  // 现在应该进行操作的队伍
+        var selectedHero = null;
+        socket.emit('initialize', {team1: teamName1, team2: teamName2});
+
+        document.getElementById('teamName1').textContent = teamName1 + ' Team';
+        document.getElementById('teamName2').textContent = teamName2 + ' Team';
+
+        function selectHero(hero) {
+            selectedHero = hero;
+            document.getElementById('pick').disabled = !selectedHero;
+            document.getElementById('ban').disabled = !selectedHero;
+        }
+
+        function bp(action) {
+            if (selectedHero && currentTeam) {
+                socket.emit('bp', {team: currentTeam, choice: selectedHero, action: action});
+            }
+        }
+        socket.on('update_bp', function(data) {
+            // 更新BP的显示
+            var bpStatus1Picked = document.getElementById('bpStatus1Picked');
+            bpStatus1Picked.textContent = " Picked: ";
+            data[teamName1]['picked'].forEach(function(hero) {
+                var img = document.createElement('img');
+                img.setAttribute('src', '/static/' + hero + '.png');
+                img.style.width = '200px';  // 设置图像宽度
+                bpStatus1Picked.appendChild(img);
+            });
+
+            var bpStatus1Banned = document.getElementById('bpStatus1Banned');
+            bpStatus1Banned.textContent = " Banned: ";
+            data[teamName1]['banned'].forEach(function(hero) {
+                var img = document.createElement('img');
+                img.setAttribute('src', '/static/' + hero + '.png');
+                img.style.width = '200px';  // 设置图像宽度
+                bpStatus1Banned.appendChild(img);
+            });
+
+            var bpStatus2Picked = document.getElementById('bpStatus2Picked');
+            bpStatus2Picked.textContent =" Picked: ";
+            data[teamName2]['picked'].forEach(function(hero) {
+                var img = document.createElement('img');
+                img.setAttribute('src', '/static/' + hero + '.png');
+                img.style.width = '200px';  // 设置图像宽度
+                bpStatus2Picked.appendChild(img);
+            });
+
+            var bpStatus2Banned = document.getElementById('bpStatus2Banned');
+            bpStatus2Banned.textContent = " Banned: ";
+            data[teamName2]['banned'].forEach(function(hero) {
+                var img = document.createElement('img');
+                img.setAttribute('src', '/static/' + hero + '.png');
+                img.style.width = '200px';  // 设置图像宽度
+                bpStatus2Banned.appendChild(img);
+            });
+
+            // 切换当前应该进行操作的队伍
+            // currentTeam = currentTeam == teamName1 ? teamName2 : teamName1;
+            currentTeam = data.next_team;
+
+        });
+
+
+    </script>
+</body>
+
+</html>
