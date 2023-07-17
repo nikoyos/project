@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>profile</title>
+</head>
+<body>
+    <h1>用户资料页面</h1>
+    <div>
+        {{ user.id }}
+    </div>
+    <div>
+        {{ user.name }}
+    </div>
+    <div>
+        {{ user.password }}
+    </div>
+<form action="{{ url_for('.upload_avatar')}}" method="post" enctype="multipart/form-data">
+  <input type="file" name="avatar">
+  <input type="submit" value="Upload">
+</form>
+
+</body>
+</html>
