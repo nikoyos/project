@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客主页</title>
+    <style>
+        body {
+            background-color: rgb(40,44,53);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        header {
+            background: url('/static/1.jpg') no-repeat center center;
+            background-size: 8%;
+            height: 100px;  /* Further decrease the height of the header */
+            display: flex;
+            align-items: flex-end;  /* Align the text to the bottom */
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding-bottom: 10px;  /* Further decrease the space below the text */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .container-title{
+             display: flex;
+            justify-content: center;
+            margin: -10px auto;
+        }
+        .new-blog-link-style {
+            /* 新建博客链接的具体样式，这里只是一个例子，你可以按照需要进行修改 */
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: absolute;  /* Position the link absolutely */
+            top: 47px;  /* Position from the top, adjust this value to make the button aligned with the image */
+            right: 83px;  /* Position from the right */
+        }
+        .new-blog-link-style:hover {
+            background-color: white;
+            color: rgb(40,44,53);
+        }
+        /* 每个博客的样式 */
+        .blog-style {
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            /* 每个博客的具体样式，这里只是一个例子，你可以按照需要进行修改 */
+        }
+        /* 每个博客创建时间的样式 */
+        .blog-time-style {
+            float: right;  /* Float the blog time to the right of the line */
+            font-size: 20px;  /* Set the font size */
+            color: lightgrey;  /* Set the font color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+            <div class="container-title">
+            <h4>关注思想、技术与艺术,闯入不一样的世界。</h4>
+        </div>
+    <main>
+        <div class="container">
+            <a class="new-blog-link-style" href={{ url_for(".new") }}>新建博客</a>
+            {% for b in blogs %}
+            <h2>
+                <a class="blog-style" href={{ url_for(".view", blog_id=b.id) }}>
+                    <span class="blog-title">{{ b.title }}</span>
+                    <span class="blog-time-style">{{ b.format_create_time() }}</span>
+                </a>
+            </h2>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>

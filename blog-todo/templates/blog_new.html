@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发表新博文</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action={{ url_for(".add") }}>
+        <input type="text" name="author" placeholder="author">
+        <input type="text" name="title" placeholder="title">
+        <textarea name="content" placeholder="content"></textarea>
+        <button type="submit">发布</button>
+    </form>
+</body>
+</html>

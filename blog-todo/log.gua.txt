@@ -1,0 +1,397 @@
+16:10:24 kwargs,  {'id': -1} <class 'dict'>
+16:10:26 kwargs,  {'id': -1} <class 'dict'>
+16:13:12 kwargs,  {'id': -1} <class 'dict'>
+16:29:40 kwargs,  {'id': -1} <class 'dict'>
+16:29:44 kwargs,  {'id': -1} <class 'dict'>
+16:29:45 kwargs,  {'id': -1} <class 'dict'>
+16:29:47 kwargs,  {'id': -1} <class 'dict'>
+16:29:48 kwargs,  {'id': -1} <class 'dict'>
+12:33:07 kwargs,  {'id': -1} <class 'dict'>
+12:34:54 kwargs,  {'blog_id': 3} <class 'dict'>
+12:34:54 kwargs,  {'id': 3} <class 'dict'>
+12:35:23 kwargs,  {'blog_id': 1} <class 'dict'>
+12:35:23 kwargs,  {'id': 1} <class 'dict'>
+12:35:26 kwargs,  {'blog_id': 2} <class 'dict'>
+12:35:26 kwargs,  {'id': 2} <class 'dict'>
+12:35:27 kwargs,  {'blog_id': 3} <class 'dict'>
+12:35:27 kwargs,  {'id': 3} <class 'dict'>
+12:35:29 kwargs,  {'blog_id': 4} <class 'dict'>
+12:35:29 kwargs,  {'id': 4} <class 'dict'>
+12:36:45 debug 13
+12:37:50 args ImmutableMultiDict([])
+12:40:25 kwargs,  {'id': -1} <class 'dict'>
+12:40:33 kwargs,  {'id': -1} <class 'dict'>
+12:40:33 kwargs,  {'id': -1} <class 'dict'>
+12:40:56 kwargs,  {'id': -1} <class 'dict'>
+12:40:56 kwargs,  {'id': -1} <class 'dict'>
+12:49:22 args ImmutableMultiDict([])
+12:49:32 kwargs,  {'id': -1} <class 'dict'>
+12:50:53 kwargs,  {'id': -1} <class 'dict'>
+12:50:53 kwargs,  {'id': -1} <class 'dict'>
+12:50:55 kwargs,  {'id': -1} <class 'dict'>
+12:50:57 kwargs,  {'username': ''} <class 'dict'>
+12:50:57 kwargs,  {'id': -1} <class 'dict'>
+12:51:00 kwargs,  {'id': -1} <class 'dict'>
+12:51:02 kwargs,  {'username': '11'} <class 'dict'>
+12:51:02 kwargs,  {'id': -1} <class 'dict'>
+12:51:13 args ImmutableMultiDict([])
+12:51:15 debug 2
+12:51:15 args ImmutableMultiDict([])
+14:40:24 debug 14
+14:49:50 debug 15
+15:25:10 kwargs,  {'id': -1} <class 'dict'>
+15:25:16 kwargs,  {'id': -1} <class 'dict'>
+15:28:55 kwargs,  {'blog_id': 1} <class 'dict'>
+15:28:55 kwargs,  {'id': 1} <class 'dict'>
+15:29:00 kwargs,  {'blog_id': 2} <class 'dict'>
+15:29:00 kwargs,  {'id': 2} <class 'dict'>
+15:29:05 kwargs,  {'blog_id': 4} <class 'dict'>
+15:29:05 kwargs,  {'id': 4} <class 'dict'>
+15:29:09 kwargs,  {'blog_id': 4} <class 'dict'>
+15:29:09 kwargs,  {'id': 4} <class 'dict'>
+15:29:17 kwargs,  {'blog_id': 4} <class 'dict'>
+15:29:17 kwargs,  {'id': 4} <class 'dict'>
+15:29:45 kwargs,  {'blog_id': 4} <class 'dict'>
+15:29:45 kwargs,  {'id': 4} <class 'dict'>
+15:29:49 kwargs,  {'blog_id': 4} <class 'dict'>
+15:29:49 kwargs,  {'id': 4} <class 'dict'>
+15:29:56 kwargs,  {'blog_id': 4} <class 'dict'>
+15:29:56 kwargs,  {'id': 4} <class 'dict'>
+15:29:59 kwargs,  {'blog_id': 4} <class 'dict'>
+15:29:59 kwargs,  {'id': 4} <class 'dict'>
+15:31:00 kwargs,  {'id': -1} <class 'dict'>
+15:31:03 kwargs,  {'id': -1} <class 'dict'>
+15:31:04 kwargs,  {'id': -1} <class 'dict'>
+15:31:09 kwargs,  {'id': -1} <class 'dict'>
+15:31:11 kwargs,  {'username': '11'} <class 'dict'>
+15:31:11 kwargs,  {'id': -1} <class 'dict'>
+15:31:12 kwargs,  {'id': -1} <class 'dict'>
+15:31:12 kwargs,  {'id': -1} <class 'dict'>
+15:31:13 kwargs,  {'id': -1} <class 'dict'>
+15:31:13 kwargs,  {'id': -1} <class 'dict'>
+15:31:14 kwargs,  {'id': -1} <class 'dict'>
+15:31:15 kwargs,  {'id': -1} <class 'dict'>
+15:31:15 kwargs,  {'id': -1} <class 'dict'>
+15:31:16 kwargs,  {'id': -1} <class 'dict'>
+15:53:20 kwargs,  {'blog_id': 3} <class 'dict'>
+15:53:20 kwargs,  {'id': 3} <class 'dict'>
+14:55:56 kwargs,  {'id': -1} <class 'dict'>
+14:56:05 kwargs,  {'id': -1} <class 'dict'>
+14:56:13 kwargs,  {'id': -1} <class 'dict'>
+14:56:16 kwargs,  {'username': '123'} <class 'dict'>
+14:56:16 kwargs,  {'id': -1} <class 'dict'>
+14:56:39 kwargs,  {'id': -1} <class 'dict'>
+14:56:40 kwargs,  {'id': -1} <class 'dict'>
+14:56:47 kwargs,  {'id': -1} <class 'dict'>
+14:56:58 kwargs,  {'id': -1} <class 'dict'>
+14:57:24 kwargs,  {'id': -1} <class 'dict'>
+14:57:26 kwargs,  {'id': -1} <class 'dict'>
+14:57:26 kwargs,  {'id': -1} <class 'dict'>
+14:57:27 kwargs,  {'id': -1} <class 'dict'>
+14:57:27 kwargs,  {'id': -1} <class 'dict'>
+13:07:16 kwargs,  {'id': -1} <class 'dict'>
+13:08:00 kwargs,  {'blog_id': 2} <class 'dict'>
+13:08:00 kwargs,  {'id': 2} <class 'dict'>
+13:08:10 kwargs,  {'blog_id': 2} <class 'dict'>
+13:08:10 kwargs,  {'id': 2} <class 'dict'>
+13:08:48 args ImmutableMultiDict([])
+13:09:03 deleted todo id 5
+13:09:03 args ImmutableMultiDict([])
+11:25:44 kwargs,  {'id': -1} <class 'dict'>
+11:25:49 args ImmutableMultiDict([])
+11:25:59 kwargs,  {'username': '123'} <class 'dict'>
+11:25:59 debug 1
+11:25:59 kwargs,  {'id': -1} <class 'dict'>
+11:26:01 kwargs,  {'username': '123'} <class 'dict'>
+11:26:01 kwargs,  {'id': 2} <class 'dict'>
+11:40:18 kwargs,  {'id': 2} <class 'dict'>
+11:41:05 kwargs,  {'id': -1} <class 'dict'>
+11:41:12 kwargs,  {'id': -1} <class 'dict'>
+11:41:16 kwargs,  {'id': -1} <class 'dict'>
+11:41:16 kwargs,  {'id': -1} <class 'dict'>
+11:41:17 kwargs,  {'id': -1} <class 'dict'>
+11:41:17 kwargs,  {'id': -1} <class 'dict'>
+11:41:17 kwargs,  {'id': -1} <class 'dict'>
+11:41:17 kwargs,  {'id': -1} <class 'dict'>
+11:41:31 args ImmutableMultiDict([])
+11:42:16 debug 2
+11:42:16 args ImmutableMultiDict([])
+11:42:18 deleted todo id 5
+11:42:18 args ImmutableMultiDict([])
+11:45:12 kwargs,  {'username': '123'} <class 'dict'>
+11:45:12 kwargs,  {'id': 2} <class 'dict'>
+11:45:26 args ImmutableMultiDict([])
+11:46:03 kwargs,  {'username': '123'} <class 'dict'>
+11:46:03 kwargs,  {'id': 2} <class 'dict'>
+11:46:35 args ImmutableMultiDict([])
+11:46:45 kwargs,  {'username': '123'} <class 'dict'>
+11:46:45 kwargs,  {'id': 2} <class 'dict'>
+11:47:41 kwargs,  {'username': '123'} <class 'dict'>
+12:51:35 kwargs,  {'id': 2} <class 'dict'>
+12:51:55 kwargs,  {'blog_id': 4} <class 'dict'>
+12:51:55 kwargs,  {'id': 4} <class 'dict'>
+13:03:24 kwargs,  {'id': 2} <class 'dict'>
+13:05:08 kwargs,  {'blog_id': 1} <class 'dict'>
+13:05:08 kwargs,  {'id': 1} <class 'dict'>
+13:05:16 kwargs,  {'blog_id': 1} <class 'dict'>
+13:05:16 kwargs,  {'id': 1} <class 'dict'>
+13:11:39 kwargs,  {'blog_id': 4} <class 'dict'>
+13:11:39 kwargs,  {'id': 4} <class 'dict'>
+13:13:12 kwargs,  {'blog_id': 1} <class 'dict'>
+13:13:12 kwargs,  {'id': 1} <class 'dict'>
+13:13:36 kwargs,  {'blog_id': 1} <class 'dict'>
+13:13:36 kwargs,  {'id': 1} <class 'dict'>
+13:27:44 kwargs,  {'blog_id': 1} <class 'dict'>
+13:27:44 kwargs,  {'id': 1} <class 'dict'>
+13:27:58 kwargs,  {'blog_id': 1} <class 'dict'>
+13:27:58 kwargs,  {'id': 1} <class 'dict'>
+13:31:27 kwargs,  {'blog_id': 1} <class 'dict'>
+13:31:27 kwargs,  {'id': 1} <class 'dict'>
+13:33:23 kwargs,  {'blog_id': 1} <class 'dict'>
+13:33:23 kwargs,  {'id': 1} <class 'dict'>
+13:35:31 kwargs,  {'blog_id': 1} <class 'dict'>
+13:35:31 kwargs,  {'id': 1} <class 'dict'>
+13:37:12 kwargs,  {'blog_id': 1} <class 'dict'>
+13:37:12 kwargs,  {'id': 1} <class 'dict'>
+13:48:08 kwargs,  {'id': 2} <class 'dict'>
+13:57:03 kwargs,  {'blog_id': 1} <class 'dict'>
+13:57:03 kwargs,  {'id': 1} <class 'dict'>
+14:06:24 kwargs,  {'blog_id': 1} <class 'dict'>
+14:06:24 kwargs,  {'id': 1} <class 'dict'>
+14:06:34 kwargs,  {'blog_id': 2} <class 'dict'>
+14:06:34 kwargs,  {'id': 2} <class 'dict'>
+14:11:02 kwargs,  {'blog_id': 1} <class 'dict'>
+14:11:02 kwargs,  {'id': 1} <class 'dict'>
+14:12:51 kwargs,  {'blog_id': 2} <class 'dict'>
+14:12:51 kwargs,  {'id': 2} <class 'dict'>
+14:14:06 kwargs,  {'blog_id': 1} <class 'dict'>
+14:14:06 kwargs,  {'id': 1} <class 'dict'>
+14:16:25 kwargs,  {'id': 2} <class 'dict'>
+14:16:32 kwargs,  {'username': '123'} <class 'dict'>
+14:16:32 kwargs,  {'id': 2} <class 'dict'>
+14:16:35 kwargs,  {'username': '123'} <class 'dict'>
+14:16:39 kwargs,  {'id': 2} <class 'dict'>
+14:16:47 kwargs,  {'id': 2} <class 'dict'>
+14:16:54 kwargs,  {'id': 2} <class 'dict'>
+14:17:56 kwargs,  {'id': 2} <class 'dict'>
+14:18:22 kwargs,  {'id': 2} <class 'dict'>
+14:18:29 kwargs,  {'id': 2} <class 'dict'>
+14:19:14 kwargs,  {'id': 2} <class 'dict'>
+14:20:25 kwargs,  {'id': 2} <class 'dict'>
+14:20:26 kwargs,  {'id': 2} <class 'dict'>
+14:20:26 kwargs,  {'id': 2} <class 'dict'>
+14:20:40 kwargs,  {'id': 2} <class 'dict'>
+14:21:41 kwargs,  {'id': 2} <class 'dict'>
+14:22:01 kwargs,  {'id': 2} <class 'dict'>
+14:23:03 kwargs,  {'id': 2} <class 'dict'>
+14:23:05 kwargs,  {'id': 2} <class 'dict'>
+14:23:06 kwargs,  {'id': 2} <class 'dict'>
+14:23:06 kwargs,  {'id': 2} <class 'dict'>
+14:23:06 kwargs,  {'id': 2} <class 'dict'>
+14:23:06 kwargs,  {'id': 2} <class 'dict'>
+14:23:07 kwargs,  {'id': 2} <class 'dict'>
+14:23:14 kwargs,  {'id': 2} <class 'dict'>
+14:24:17 kwargs,  {'id': 2} <class 'dict'>
+14:24:22 kwargs,  {'id': 2} <class 'dict'>
+14:24:56 kwargs,  {'id': 2} <class 'dict'>
+14:25:02 kwargs,  {'id': 2} <class 'dict'>
+14:25:24 kwargs,  {'id': 2} <class 'dict'>
+14:25:25 kwargs,  {'id': 2} <class 'dict'>
+14:25:40 kwargs,  {'id': 2} <class 'dict'>
+14:25:53 kwargs,  {'id': 2} <class 'dict'>
+14:25:53 kwargs,  {'id': 2} <class 'dict'>
+14:25:57 kwargs,  {'id': 2} <class 'dict'>
+14:26:10 kwargs,  {'id': 2} <class 'dict'>
+14:26:10 kwargs,  {'id': 2} <class 'dict'>
+14:26:28 kwargs,  {'username': '123'} <class 'dict'>
+14:27:42 kwargs,  {'username': '123'} <class 'dict'>
+14:27:45 kwargs,  {'username': '123'} <class 'dict'>
+14:27:58 kwargs,  {'blog_id': 1} <class 'dict'>
+14:27:58 kwargs,  {'id': 1} <class 'dict'>
+14:28:43 args ImmutableMultiDict([])
+14:40:39 kwargs,  {'id': 2} <class 'dict'>
+14:40:44 kwargs,  {'username': '123'} <class 'dict'>
+14:41:51 kwargs,  {'id': 2} <class 'dict'>
+14:41:54 kwargs,  {'username': '123'} <class 'dict'>
+14:58:05 kwargs,  {'blog_id': 2} <class 'dict'>
+14:58:05 kwargs,  {'id': 2} <class 'dict'>
+14:58:17 kwargs,  {'blog_id': 1} <class 'dict'>
+14:58:17 kwargs,  {'id': 1} <class 'dict'>
+15:02:20 kwargs,  {'blog_id': 1} <class 'dict'>
+15:02:20 kwargs,  {'id': 1} <class 'dict'>
+15:04:38 kwargs,  {'blog_id': 1} <class 'dict'>
+15:04:38 kwargs,  {'id': 1} <class 'dict'>
+15:05:22 kwargs,  {'blog_id': 1} <class 'dict'>
+15:05:22 kwargs,  {'id': 1} <class 'dict'>
+15:05:24 kwargs,  {'blog_id': 1} <class 'dict'>
+15:05:24 kwargs,  {'id': 1} <class 'dict'>
+15:05:51 kwargs,  {'blog_id': 1} <class 'dict'>
+15:05:51 kwargs,  {'id': 1} <class 'dict'>
+15:06:15 kwargs,  {'blog_id': 1} <class 'dict'>
+15:06:15 kwargs,  {'id': 1} <class 'dict'>
+15:06:27 kwargs,  {'blog_id': 4} <class 'dict'>
+15:06:27 kwargs,  {'id': 4} <class 'dict'>
+15:06:33 kwargs,  {'blog_id': 2} <class 'dict'>
+15:06:33 kwargs,  {'id': 2} <class 'dict'>
+15:06:38 kwargs,  {'blog_id': 2} <class 'dict'>
+15:06:38 kwargs,  {'id': 2} <class 'dict'>
+15:06:42 kwargs,  {'blog_id': 5} <class 'dict'>
+15:06:42 kwargs,  {'id': 5} <class 'dict'>
+15:06:49 kwargs,  {'blog_id': 2} <class 'dict'>
+15:06:49 kwargs,  {'id': 2} <class 'dict'>
+15:06:54 kwargs,  {'blog_id': 4} <class 'dict'>
+15:06:54 kwargs,  {'id': 4} <class 'dict'>
+15:07:15 kwargs,  {'blog_id': 4} <class 'dict'>
+15:07:15 kwargs,  {'id': 4} <class 'dict'>
+15:07:22 kwargs,  {'blog_id': 4} <class 'dict'>
+15:07:22 kwargs,  {'id': 4} <class 'dict'>
+15:07:35 kwargs,  {'blog_id': 1} <class 'dict'>
+15:07:35 kwargs,  {'id': 1} <class 'dict'>
+15:08:30 kwargs,  {'blog_id': 5} <class 'dict'>
+15:08:30 kwargs,  {'id': 5} <class 'dict'>
+15:08:55 kwargs,  {'blog_id': 5} <class 'dict'>
+15:08:55 kwargs,  {'id': 5} <class 'dict'>
+15:08:56 kwargs,  {'blog_id': 5} <class 'dict'>
+15:08:56 kwargs,  {'id': 5} <class 'dict'>
+15:08:57 kwargs,  {'blog_id': 5} <class 'dict'>
+15:08:57 kwargs,  {'id': 5} <class 'dict'>
+15:09:02 kwargs,  {'blog_id': 5} <class 'dict'>
+15:09:02 kwargs,  {'id': 5} <class 'dict'>
+15:11:22 kwargs,  {'blog_id': 5} <class 'dict'>
+15:11:22 kwargs,  {'id': 5} <class 'dict'>
+15:12:56 kwargs,  {'blog_id': 5} <class 'dict'>
+15:12:56 kwargs,  {'id': 5} <class 'dict'>
+15:13:02 kwargs,  {'blog_id': 5} <class 'dict'>
+15:13:02 kwargs,  {'id': 5} <class 'dict'>
+15:13:03 kwargs,  {'blog_id': 5} <class 'dict'>
+15:13:03 kwargs,  {'id': 5} <class 'dict'>
+15:13:03 kwargs,  {'blog_id': 5} <class 'dict'>
+15:13:03 kwargs,  {'id': 5} <class 'dict'>
+15:13:04 kwargs,  {'blog_id': 5} <class 'dict'>
+15:13:04 kwargs,  {'id': 5} <class 'dict'>
+15:13:05 kwargs,  {'blog_id': 5} <class 'dict'>
+15:13:05 kwargs,  {'id': 5} <class 'dict'>
+15:13:06 kwargs,  {'blog_id': 5} <class 'dict'>
+15:13:06 kwargs,  {'id': 5} <class 'dict'>
+15:13:06 kwargs,  {'blog_id': 5} <class 'dict'>
+15:13:06 kwargs,  {'id': 5} <class 'dict'>
+15:13:38 kwargs,  {'blog_id': 1} <class 'dict'>
+15:13:38 kwargs,  {'id': 1} <class 'dict'>
+15:16:46 kwargs,  {'blog_id': 1} <class 'dict'>
+15:16:46 kwargs,  {'id': 1} <class 'dict'>
+15:17:52 kwargs,  {'blog_id': 1} <class 'dict'>
+15:17:52 kwargs,  {'id': 1} <class 'dict'>
+15:18:49 kwargs,  {'blog_id': 1} <class 'dict'>
+15:18:49 kwargs,  {'id': 1} <class 'dict'>
+15:19:14 kwargs,  {'blog_id': 1} <class 'dict'>
+15:19:14 kwargs,  {'id': 1} <class 'dict'>
+15:19:23 kwargs,  {'blog_id': 1} <class 'dict'>
+15:19:23 kwargs,  {'id': 1} <class 'dict'>
+15:19:49 kwargs,  {'blog_id': 5} <class 'dict'>
+15:19:49 kwargs,  {'id': 5} <class 'dict'>
+15:19:56 kwargs,  {'blog_id': 4} <class 'dict'>
+15:19:56 kwargs,  {'id': 4} <class 'dict'>
+15:19:58 kwargs,  {'blog_id': 1} <class 'dict'>
+15:19:58 kwargs,  {'id': 1} <class 'dict'>
+15:20:06 kwargs,  {'blog_id': 3} <class 'dict'>
+15:20:06 kwargs,  {'id': 3} <class 'dict'>
+15:20:13 kwargs,  {'blog_id': 3} <class 'dict'>
+15:20:13 kwargs,  {'id': 3} <class 'dict'>
+15:20:16 kwargs,  {'blog_id': 4} <class 'dict'>
+15:20:16 kwargs,  {'id': 4} <class 'dict'>
+15:20:36 kwargs,  {'blog_id': 4} <class 'dict'>
+15:20:36 kwargs,  {'id': 4} <class 'dict'>
+15:20:58 kwargs,  {'id': 2} <class 'dict'>
+15:22:48 kwargs,  {'id': 2} <class 'dict'>
+15:24:24 kwargs,  {'username': '123'} <class 'dict'>
+15:24:41 kwargs,  {'username': '123d'} <class 'dict'>
+15:24:41 kwargs,  {'id': 2} <class 'dict'>
+15:24:43 kwargs,  {'username': '23424'} <class 'dict'>
+15:24:43 kwargs,  {'id': 2} <class 'dict'>
+15:24:45 kwargs,  {'username': '321321'} <class 'dict'>
+15:24:45 kwargs,  {'id': 2} <class 'dict'>
+15:24:53 kwargs,  {'username': '1234'} <class 'dict'>
+15:24:53 debug 2
+15:24:53 kwargs,  {'id': 2} <class 'dict'>
+15:24:56 kwargs,  {'username': '1234'} <class 'dict'>
+15:25:24 kwargs,  {'id': 3} <class 'dict'>
+15:27:36 kwargs,  {'id': 3} <class 'dict'>
+15:27:46 kwargs,  {'username': '123'} <class 'dict'>
+15:27:49 kwargs,  {'blog_id': 1} <class 'dict'>
+15:27:49 kwargs,  {'id': 1} <class 'dict'>
+15:28:16 kwargs,  {'blog_id': 2} <class 'dict'>
+15:28:16 kwargs,  {'id': 2} <class 'dict'>
+15:28:19 kwargs,  {'blog_id': 3} <class 'dict'>
+15:28:19 kwargs,  {'id': 3} <class 'dict'>
+15:28:21 kwargs,  {'blog_id': 4} <class 'dict'>
+15:28:21 kwargs,  {'id': 4} <class 'dict'>
+15:28:25 kwargs,  {'blog_id': 1} <class 'dict'>
+15:28:25 kwargs,  {'id': 1} <class 'dict'>
+15:28:31 kwargs,  {'id': 2} <class 'dict'>
+15:28:35 args ImmutableMultiDict([])
+15:29:30 args ImmutableMultiDict([])
+15:29:31 args ImmutableMultiDict([])
+15:29:31 args ImmutableMultiDict([])
+15:29:32 args ImmutableMultiDict([])
+15:29:42 args ImmutableMultiDict([])
+15:29:42 args ImmutableMultiDict([])
+15:29:43 args ImmutableMultiDict([])
+15:29:44 args ImmutableMultiDict([])
+15:30:13 args ImmutableMultiDict([])
+15:30:18 args ImmutableMultiDict([])
+15:30:19 args ImmutableMultiDict([])
+15:30:38 args ImmutableMultiDict([])
+15:30:58 debug 2
+15:30:58 args ImmutableMultiDict([])
+15:31:23 args ImmutableMultiDict([])
+15:31:24 args ImmutableMultiDict([])
+15:33:03 args ImmutableMultiDict([])
+15:33:50 args ImmutableMultiDict([])
+15:33:51 args ImmutableMultiDict([])
+15:33:53 args ImmutableMultiDict([])
+15:38:52 args ImmutableMultiDict([])
+15:39:13 args ImmutableMultiDict([])
+15:39:39 args ImmutableMultiDict([])
+15:39:47 args ImmutableMultiDict([])
+15:40:00 deleted todo id 4
+15:40:00 args ImmutableMultiDict([])
+15:40:01 deleted todo id 5
+15:40:01 args ImmutableMultiDict([])
+15:40:13 debug 1
+15:40:13 args ImmutableMultiDict([])
+15:40:26 kwargs,  {'blog_id': 2} <class 'dict'>
+15:40:26 kwargs,  {'id': 2} <class 'dict'>
+15:40:34 kwargs,  {'blog_id': 4} <class 'dict'>
+15:40:34 kwargs,  {'id': 4} <class 'dict'>
+15:40:59 args ImmutableMultiDict([])
+15:41:54 args ImmutableMultiDict([])
+15:41:55 args ImmutableMultiDict([])
+15:41:55 args ImmutableMultiDict([])
+15:41:56 args ImmutableMultiDict([])
+15:41:56 args ImmutableMultiDict([])
+15:41:56 args ImmutableMultiDict([])
+15:41:56 args ImmutableMultiDict([])
+15:41:56 args ImmutableMultiDict([])
+15:41:57 args ImmutableMultiDict([])
+15:41:57 args ImmutableMultiDict([])
+15:42:05 args ImmutableMultiDict([])
+15:44:16 kwargs,  {'blog_id': 4} <class 'dict'>
+15:44:16 kwargs,  {'id': 4} <class 'dict'>
+15:44:46 kwargs,  {'blog_id': 2} <class 'dict'>
+15:44:46 kwargs,  {'id': 2} <class 'dict'>
+15:44:52 kwargs,  {'blog_id': 1} <class 'dict'>
+15:44:52 kwargs,  {'id': 1} <class 'dict'>
+15:44:57 kwargs,  {'blog_id': 2} <class 'dict'>
+15:44:57 kwargs,  {'id': 2} <class 'dict'>
+15:58:03 kwargs,  {'id': 2} <class 'dict'>
+15:59:01 kwargs,  {'id': 2} <class 'dict'>
+15:59:08 kwargs,  {'id': 2} <class 'dict'>
+15:59:23 kwargs,  {'username': '123'} <class 'dict'>
+15:59:38 kwargs,  {'username': '123'} <class 'dict'>
+16:00:21 kwargs,  {'username': '123'} <class 'dict'>
+16:00:28 kwargs,  {'blog_id': 2} <class 'dict'>
+16:00:28 kwargs,  {'id': 2} <class 'dict'>
+16:03:02 kwargs,  {'username': '123'} <class 'dict'>
+16:03:11 kwargs,  {'blog_id': 2} <class 'dict'>
+16:03:11 kwargs,  {'id': 2} <class 'dict'>
+16:10:28 kwargs,  {'id': 2} <class 'dict'>

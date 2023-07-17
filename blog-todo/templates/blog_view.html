@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ blog.title }}</title>
+    <style>
+        body {
+            background-color: rgb(40,44,53);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        /* 标题样式 */
+        h1 {
+            text-align: center;  /* Horizontal alignment */
+            /* Add other styles as needed */
+        }
+        /* 正文样式 */
+        p {
+            text-align: center;  /* Horizontal alignment */
+            font-size: 20px;  /* Increase the font size */
+            line-height: 2;  /* Increase the line height */
+            padding: 0 150px;  /* Increase the left and right padding */
+            color: rgb(226,226,226);
+
+            /* Add other styles as needed */
+        }
+        /* 评论部分样式 */
+        div {
+            /* Add styles as needed */
+            padding-top: 20px;
+        }
+        /* 评论样式 */
+        .comment {
+             border: 1px solid white;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            /* Add styles as needed */
+        }
+/* 表单样式 */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                        /*border-top: 1px solid white;  !* Move the border from .comments-section *!*/
+
+        }
+        /* 输入框样式 */
+        form input[type="text"] {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid white;
+            background-color: rgb(40,44,53);
+            color: white;
+            width: 100%;
+            max-width: 300px;
+            transition: all 0.3s ease;
+        }
+        form input[type="text"]:focus {
+            border-color: lightgray;
+            outline: none;
+        }
+        /* 按钮样式 */
+        form button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: rgb(40,44,53);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        form button:hover {
+            background-color: white;
+            color: rgb(40,44,53);
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ blog.title }}</h1>
+    <h3>{{ blog.author }}</h3>
+    <p>{{ blog.content }}</p>
+    <form method="post" action="comment/new">
+        <input type="text" name="author" placeholder="author">
+        <input type="text" name="content" placeholder="content">
+        <input type="hidden" name="blog_id" value={{ blog.id }}>
+        <button type="submit">提交评论</button>
+    </form>
+    <div>
+        {% for c in comments %}
+            <div class="comment">{{ c.content }} 用户: {{ c.author }}</div>
+        {% endfor %}
+    </div>
+</body>
+</html>

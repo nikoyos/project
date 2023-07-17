@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <style>
+        body {
+            background-image: url('/static/2.jpg');
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            /*background-color: rgba(0, 0, 0, 0.7);*/
+            padding: 10px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            /*background-color: rgba(0, 0, 0, 0.7);*/
+            padding: 10px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid white;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        button {
+            background-color: white;
+            color: rgb(40,44,53);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: lightgray;
+            color: rgb(40,44,53);
+        }
+        form {
+            max-width: 300px;
+            margin: 20px auto;
+            background-color: rgba(60,64,73, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+        /* Add a footer */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Blog</h1>
+    <h2>Please register or login to continue</h2>
+    <form method="post" action="{{ url_for('.register') }}">
+        <input name="username" placeholder="用户名">
+        <input name="password" type="password" placeholder="密码">
+        <button type="submit">注册</button>
+    </form>
+    <form method="post" action="{{ url_for('.login') }}">
+        <input name="username" placeholder="用户名">
+        <input name="password" type="password" placeholder="密码">
+        <button type="submit">登录</button>
+    </form>
+    <footer>
+        &copy; 2023 Our Blog. All rights reserved.
+    </footer>
+</body>
+</html>
